@@ -56,6 +56,9 @@ while cmd != 'k':
     if cmd in ['a', 'r', 's', 'e', 'p', 'd']:
         try:
             session_name = user_inputs[1]
+            if session_name not in session_list:
+                print('Session not in session list' + '\n')
+                continue
             log_file = 'log/log_' + session_name + '.json'
         except IndexError:
             print('Missing arguments' + '\n')
