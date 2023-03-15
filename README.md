@@ -1,2 +1,2 @@
 # session-recorder
-# FAZuH's first python script project
+FAZuH's first python script project
